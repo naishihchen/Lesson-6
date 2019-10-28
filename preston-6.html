@@ -11,9 +11,10 @@
         <meta name="description" content="Website Project for BYUI CIT230 Class">
         <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
         <script src="js/time.js"></script>
+        <script src="js/windchill.js"></script>
         <script src="js/toggle-menu-script.js"></script>
     </head>
-    <body onload="getTime()">
+    <body onload="getTime(); getWindChill();">
         <header>
             <div id="name-and-slogan">
                 <h1>Forecast Friend</h1>
@@ -37,6 +38,14 @@
                 <h2>Preston Idaho</h2>
                 <div class="town-options" id="hero">
                     <img alt="town picture", srcset="images/franklin_srcset-min_650.jpg 1x, images/franklin_srcset_min-1074.jpg 2x, images/franklin_srcset-min_1380.jpg 3x", src="images/franklin_srcset-min_650.jpg">
+                    <div id="weather-summary">
+                      <h3>Weather Summary</h3>
+                      <p>Currently: Sunny</p>
+                      <p>High: 54 &#176;F</p>
+                      <p id="windchill"></p>
+                      <p>Humidity: 95%</p>
+                      <p>Wind Speed: 12 mph</p>
+                    </div>
                 </div>
                 <div class="town-options" id="forecast">
                     <h3>5 Day Weather Forecast</h3>
